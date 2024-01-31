@@ -2,16 +2,18 @@ import { FC, type PropsWithChildren, type ReactNode } from "react";
 
 interface CourseGoalProps {
   title: string;
+  description: string;
   children: ReactNode;
 }
 
 // type CourseGoalProps = PropsWithChildren<{title: string}>;
 
-function CourseGoal({ title, children }: CourseGoalProps) {
+function CourseGoal({ title, description, children }: CourseGoalProps) {
   return (
-    <article>
+    <article className="card">
       <div>
         <h2>{title}</h2>
+        <p>{description}</p>
         {children}
       </div>
       <button>Delete</button>

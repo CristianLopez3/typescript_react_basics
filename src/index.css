@@ -13,8 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-main{
+main {
   display: block;
   margin: 0 auto;
   max-width: 1120px;
@@ -23,4 +22,28 @@ main{
   padding: 2rem 5rem 2rem 5rem;
   border-radius: 1rem;
   box-shadow: 0 0 2rem #000;
+  list-style: none;
+
+  & .card {
+    background: #302d2d91;
+    border: thin solid orange;
+    margin: 0.75rem;
+    max-width: 400px;
+    list-style: none;
+
+    & li {
+      list-style-type: none;
+    }
+
+    & article {
+      list-style: none;
+    }
+
+    
+  }
+}
+
+
+::marker {
+  background-color: transparent;
 }
