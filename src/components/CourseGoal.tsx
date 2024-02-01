@@ -1,14 +1,16 @@
 import { FC, type PropsWithChildren, type ReactNode } from "react";
 
 interface CourseGoalProps {
+  id: number;
   title: string;
   description: string;
+  onDelete: (id: number) => void;
   children: ReactNode;
 }
 
 // type CourseGoalProps = PropsWithChildren<{title: string}>;
 
-function CourseGoal({ title, description, children }: CourseGoalProps) {
+function CourseGoal({ id, title, description, onDelete, children }: CourseGoalProps) {
   return (
     <article className="card">
       <div>
@@ -16,7 +18,7 @@ function CourseGoal({ title, description, children }: CourseGoalProps) {
         <p>{description}</p>
         {children}
       </div>
-      <button>Delete</button>
+      <button onClick={() => onDelete(id)}>Delete</button>
     </article>
   );
 }
