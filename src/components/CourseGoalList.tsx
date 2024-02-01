@@ -1,4 +1,4 @@
-import { type CourseGoal as CGoal } from "../App";
+import { type CourseGoal as CGoal } from "../pages/GoalsNotes";
 import CourseGoal from "./CourseGoal";
 
 type CourseGoalListProps = {
@@ -18,7 +18,7 @@ const CourseGoalList = ({ goals, onDeleteGoal }: CourseGoalListProps) => {
               description={goal.description}
               onDelete={onDeleteGoal}
             >
-              <p>Learn it from the ground up</p>
+              ...
             </CourseGoal>
           </li>
         );
