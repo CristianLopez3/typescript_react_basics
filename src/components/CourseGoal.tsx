@@ -1,4 +1,4 @@
-import { FC, type PropsWithChildren, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 interface CourseGoalProps {
   id: number;
