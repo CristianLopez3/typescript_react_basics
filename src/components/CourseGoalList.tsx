@@ -12,7 +12,7 @@ const CourseGoalList = ({ goals, onDeleteGoal }: CourseGoalListProps) => {
   if (goals.length === 0) {
     return (
       <InfoBox mode="hint">
-        You have no ocurse goals yes. Start adding some!
+        You have no course goals yes. Start adding some!
       </InfoBox>
     );
   }
